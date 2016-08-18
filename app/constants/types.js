@@ -1,0 +1,6 @@
+exports.LOG_IN_USER = 'LOG_IN_USER';
+exports.RETURN_LOG_IN_USER = 'RETURN_LOG_IN_USER';
+exports.LOG_OUT_USER = 'LOG_OUT_USER';
+exports.ADD_ARTIST = 'ADD_ARTIST';
+exports.SET_ARTIST = 'SET_ARTIST';
+exports.INCREMENT = 'INCREMENT';

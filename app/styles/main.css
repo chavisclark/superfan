@@ -1,0 +1,880 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Custom Chrome Scrollbar 
+------------------------------------------------------*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
+
+/* Initial app background (transition works with color) 
+------------------------------------------------------*/
+#app {
+  background: transparent;
+  -webkit-transition:0.3s ease all;
+   -moz-transition:0.3s ease all;
+    -ms-transition:0.3s ease all;
+     -o-transition:0.3s ease all;
+        transition:0.3s ease all;
+}
+
+/* Using this as home bg image only
+------------------------------------------------------*/
+#app.orangeBg {
+  background: url('https://hd.unsplash.com/photo-1429962714451-bb934ecdc4ec');
+  background-size: cover;
+  height: 100vh;
+  opacity: 
+}
+
+/* Overwriting Stagelink.css  
+------------------------------------------------------*/
+a.loginbox__username {
+  color: white;
+}
+
+.no-decoration:hover {
+  text-decoration: none;
+  opacity: .5;
+  -webkit-transition: ease-out 0.4s !important;
+  transition: ease-out 0.4s !important;
+}
+/* Layout
+------------------------------------------------------*/
+.onTop {
+  z-index: 11
+}
+
+.center-layout {
+  display: flex;
+  flex:1;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.nudge {
+  margin-right: 15px; 
+}
+
+.space-bottom {
+  padding-bottom: 50px;
+}
+
+.space-top {
+  padding-top: 50px;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+/* Font-styles
+------------------------------------------------------*/
+.white-text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 15px;
+    margin: auto
+}
+
+.orange-text{
+  color: orange !important;
+}
+
+.shadow {
+  text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-rectangle.white-text{
+  border: solid 1px white;
+  padding: 25px;
+  font-weight: 500;
+ }
+
+.modal-text {
+  color: black !important;
+  padding: 30px;
+}
+
+.no-commit {
+    font-size: 16px;
+    color: #9c9e9f;
+    text-align: center;
+    padding: 11px 0
+}
+
+/* Bucket (Container) styles
+------------------------------------------------------*/
+.boxCover {
+  background: rgba(0, 0, 0, .5);
+  padding: 35px;
+  border-radius: 12px;
+  margin-bottom: 20px; 
+}
+
+.img-circle.profile {
+  margin: 10px auto;
+}
+
+.my-artist-list {
+  width: 100%;
+}
+
+.artist-bucket {
+  font-family: Arial, sans-serif;
+  float: none;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  display: inline-block;
+  border-radius: 7px;
+
+}
+.artist-bucket * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.artist-bucket img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.artist-bucket figcaption {
+  width: 100%;
+  background-color: black;
+  padding: 25px;
+  position: relative;
+}
+.artist-bucket figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 200px;
+  border-color: transparent transparent transparent orange;
+}
+.artist-bucket figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.artist-bucket figcaption a:hover {
+  opacity: 1;
+}
+
+.artist-bucket h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.artist-bucket h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.artist-bucket p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+/* Google Map 
+------------------------------------*/
+.map {
+  height: 600px;
+  overflow-x: hidden;
+}
+.form-inline {
+  margin: 20px 0;
+}
+.form-inline .form-group {
+  margin-bottom: 0;
+}
+.form-inline .form-group,
+.form-inline .form-control,
+.form-inline button {
+  width: 100%;
+}
+.bg-danger,
+.bg-info {
+  padding: 25px;
+  margin: 0;
+  font-size: 1em !important;
+}
+
+/* Input style
+------------------------------------------------------*/
+select {
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+  background-color:white;
+  background-repeat:no-repeat;
+  background-position: right 10px top 15px;
+  background-size: 16px 16px;
+  color:black;
+  padding:12px;
+  padding-right: 30px;
+  width:auto;
+  font-family:arial,tahoma;
+  font-size:16px;
+  text-align: left;
+  color:black;
+  text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-radius:0px;
+  -webkit-border-radius:0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border:0;
+  outline:0;
+  -webkit-transition:0.3s ease all;
+     -moz-transition:0.3s ease all;
+      -ms-transition:0.3s ease all;
+       -o-transition:0.3s ease all;
+          transition:0.3s ease all;
+  text-overflow: '';
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  margin: auto 3px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#blue {
+  background-color:#b4b4b4;
+}
+
+select:focus, select:active {
+  border:0;
+  outline:0;
+}
+
+option:focus {
+  background: pink;
+}
+
+.newish input[type=submit],
+.newish .btn {
+  font-size: 20px;
+  font-style: normal;
+  padding: 0 6px;
+  border: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-weight: 150;
+  box-shadow: none;
+  height: 73px;
+  border-top: 2px solid #fff
+}
+
+.newish input[type=submit] .fa,
+.newish .btn .fa {
+  margin-right: 12px;
+  position: relative;
+  top: 6px
+}
+
+.newish input[type=text].input-field {
+    height: 55px;
+    width: 216px;
+    padding: 0;
+    border: 0;
+    background: #f7f7f7;
+    text-align: center;
+    -webkit-border-radius: 0;
+    font-size: 18px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #232323
+}
+
+.newish input[type=text].input-field:focus {
+    outline: none
+}
+
+.newish input[type=text].input-field::-webkit-input-placeholder {
+    color: #7d7d7d
+}
+
+.newish input[type=text].input-field:-moz-placeholder {
+    color: #7d7d7d;
+    opacity: 1
+}
+
+.newish input[type=text].input-field::-moz-placeholder {
+    color: #7d7d7d;
+    opacity: 1
+}
+
+.newish input[type=text].input-field:-ms-input-placeholder {
+    color: #7d7d7d
+}
+
+.my-artist-box {
+  border: 1px solid #FAF0E6;
+  background-color: #FFFAF0;
+  min-width: 300px;
+  min-height: 400px;
+}
+
+.HiddenCheckbox {
+  display: none;
+}
+.mobileMenuContainer {
+  display: inline-block;
+}
+.mobileMenuHeader {
+  margin: 20px;
+  color: #999;
+  display: inline-block;
+  float: right;
+  font-weight: 100;
+  line-height: 30px;
+  margin: 0 0 0 15px;
+  opacity: 0;
+  position: relative;
+  -webkit-transform: translate3d(0, -15px, 0);
+          transform: translate3d(0, -15px, 0);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.6s;
+  transition: opacity 0.5s, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 0.5s;
+  transition: transform 0.6s, opacity 0.5s, -webkit-transform 0.6s;
+  z-index: 2;
+}
+.mobileMenuIcon {
+  margin: 20px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 15px;
+  position: relative;
+  width: 15px;
+  z-index: 2;
+}
+.mobileMenuIcon::before {
+  box-shadow: #999 0 6px 0;
+  height: 3px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  width: 15px;
+}
+.mobileMenuIcon::after {
+  bottom: 0;
+  height: 3px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  width: 15px;
+}
+.mobileMenuIcon::before,
+.mobileMenuIcon::after {
+  background: #999;
+  display: block;
+  content: '';
+  position: absolute;
+  -webkit-transition: box-shadow 0.2s linear, -webkit-transform 0.4s 0.2s;
+  transition: box-shadow 0.2s linear, -webkit-transform 0.4s 0.2s;
+  transition: box-shadow 0.2s linear, transform 0.4s 0.2s;
+  transition: box-shadow 0.2s linear, transform 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+}
+.mobileMenu {
+  background: transparent;
+  bottom: 0;
+  right: -90%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: right 0.4s !important;
+  transition: right 0.4s !important;
+}
+
+.mobileMenu > .mobileMenu-list {
+    display: none;
+}
+
+.HiddenCheckbox:checked ~ .mobileMenuHeader {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+.HiddenCheckbox:checked ~ .mobileMenuIcon::before {
+  box-shadow: transparent 0 0 0;
+  -webkit-transform: rotate(45deg) translate3d(6px, -3px, 0);
+          transform: rotate(45deg) translate3d(6px, -3px, 0);
+}
+.HiddenCheckbox:checked ~ .mobileMenuIcon::after {
+  -webkit-transform: rotate(-45deg) translate3d(6px, 3px, 0);
+          transform: rotate(-45deg) translate3d(6px, 3px, 0);
+}
+
+.HiddenCheckbox:checked ~ .mobileMenu {
+  right: 0;
+  background: #333;
+  display: block;
+}
+
+.HiddenCheckbox:checked ~ .mobileMenu > .mobileMenu-list {
+  display: block;
+}
+
+.mobileMenu-list {
+  list-style-type: none;
+  margin: 60px 0 0;
+  padding: 0;
+}
+
+.mobileMenu-item {
+  margin: 0;
+}
+.mobileMenu-link {
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  padding: 8px 22px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.mobileMenu-link:hover {
+  text-decoration: none;
+  color: orange;
+  -webkit-transition: ease-out 0.4s !important;
+  transition: ease-out 0.4s !important;
+}
+
+.mobile-username {
+  display: block;
+  font-weight: 600;
+  padding: 30px auto;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+/*  Custom styling for pagePiling
+------------------------------------------------------*/
+.section{
+  text-align: center;
+}
+
+.intro{
+  width:95%;
+  margin:auto;
+}
+
+#pp-nav.custom .pp-tooltip {
+  color: #AAA;
+}
+
+/*  Hang CSS animation from Hover.js
+------------------------------------------------------*/
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+
+  50% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px);
+  }
+
+  100% {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+}
+
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+
+  50% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px);
+  }
+
+  100% {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+}
+
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+}
+
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+}
+
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.appear-enter {
+  transition-duration: 500ms;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+  opacity: 0
+}
+
+.appear-enter.appear-enter-active {
+  opacity: 1
+}
+
+.appear-leave {
+  opacity: 0
+}
+
+.hoverable {
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+.hoverable:hover {
+  opacity: 1;
+}
+
+/* Media Queries
+------------------------------------------------------*/
+@media(max-width: 960px) {
+  .my-artist-box {
+    margin-right: 0;
+  }  
+}
+
+@media(max-width: 863px) {
+  .mobile-center-layout {
+    display: flex;
+    flex:1;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 700px) {
+  .mobilize {
+    width: 50%;
+  }
+  .mobilize-text, .btn.white-text, .heading.white-text {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 320px){
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: .9em;
+  }
+  p {
+    font-size: .8em;
+  }
+  .hvr-hang {
+    font-size: 2em;
+  }
+  .scroll-box {
+    padding-top: 60px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 320px){
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: .8em;
+  }
+  .hvr-hang {
+    font-size: 2em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 420px){
+  h1 {
+    font-size: 1.444em;
+  }
+  h2 {
+    font-size: 1.33em;
+  }
+  p {
+    font-size: 1.152em;
+  }
+  .hvr-hang {
+    font-size: 2em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 520px){
+  h1 {
+    font-size: 1.888em;
+  }
+  h2 {
+    font-size: 1.63em;
+  }
+  p {
+    font-size: 1.5104em;
+  }
+  .hvr-hang {
+    font-size: 2em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 620px){
+  h1 {
+    font-size: 2.332em;
+  }
+  h2 {
+    font-size: 2.0em;
+  }
+  p {
+    font-size: 1.5104em;
+  }
+  .hvr-hang {
+    font-size: 2.5em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 720px){
+  h1 {
+    font-size: 2.776em;
+  }
+  h2 {
+    font-size: 2.33em;
+  }
+  p {
+    font-size: 1.8656em;
+  }
+  .hvr-hang {
+    font-size: 2.5em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 820px){
+  h1 {
+    font-size: 3.22em;
+  }
+  h2 {
+    font-size: 2.7em;
+  }
+  p {
+    font-size: 1.8656em;
+  }
+  .hvr-hang {
+    font-size: 2.5em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .5em;
+  }
+}
+
+@media(min-width: 920px){
+  h1 {
+    font-size: 3.664em;
+  }
+
+  h2 {
+    font-size: 3.0em;
+  }
+  p {
+    font-size: 2.2208em;
+  }
+  .hvr-hang {
+    font-size: 2.8em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .8em;
+  }
+}
+
+@media(min-width: 1020px){
+  h1 {
+    font-size: 4.108em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  p {
+    font-size: 2.2208em;
+  }
+  .hvr-hang {
+    font-size: 2.8em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: .8em;
+  }
+}
+
+@media(min-width: 1120px){
+  h1 {
+    font-size: 4.552em;
+  }
+  h2 {
+    font-size: 4.0em;
+  }
+  p {
+    font-size: 2.576em;
+  }
+  .hvr-hang {
+    font-size: 3em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 1220px){
+  h1 {
+    font-size: 4.996em;
+  }
+  h2 {
+    font-size: 3.6em;
+  }
+  p {
+    font-size: 2.9312em;
+  }
+  .hvr-hang {
+    font-size: 3em;
+  }
+  .scroll-box {
+    padding-top: 100px;
+  }
+  .scroll-box-text {
+    font-size: 1em;
+  }
+}
