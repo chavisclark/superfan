@@ -65,17 +65,17 @@ Superfan is fully contained within the client browser and has no major server ac
 ### React ecosystem technologies
 
 ###### [React, react-dom](https://github.com/facebook/react)
-React is a JavaScript library for creating user interfaces and its the backbone of my app (hehe). I used this environment (^15.3) because it's a super cool.
+React is a JavaScript library for creating user interfaces and its the backbone of my app (hehe). I used this environment (^15.3) because it's super cool.
 
 ###### [Webpack, webpack-dev-server](https://github.com/webpack/webpack)
 Webpack is a module bundler that generates static represenations of my application.
 
-I used webpack to compile and bundle my application files. This is where my Javascript(Babel) is translated into something that can be read by the browser. It also bundles my CSS. Now, this webpack config file can get pretty complicated real quick, but.... You know what I'm going to say right? This is only a prototype.
+I used webpack to compile and bundle my application files. This is where my Javascript(Babel) is translated into something that can be read by the browser. It also bundles my CSS. Now, this webpack config file can get pretty complicated real quick, but mine is simple because... You know what I'm going to say right? This is only a prototype.
 
 The webpack-dev-server is a little node.js Express server, which uses the webpack-dev-middleware to serve my webpack bundle.
 
 ###### [Redux](https://github.com/reactjs/redux)
-Redux is a predictable state container for JavaScript apps. This is how I am able to maintain the state of my application and and respond to changes within my app efficiently.
+Redux is a predictable state container for JavaScript apps. This is how I am able to maintain the state of my application and respond to changes within my app efficiently.
 
 ###### [React Redux](https://github.com/reactjs/react-redux)
 This binds my React goodies and my Redux goodies allowing me to connect my state!
@@ -89,13 +89,13 @@ This handles all of my URL routing. It has a simple API but it is very powerful.
 Lodash is a toolkit of Javascript functions that provides clean, performant methods for manipulating objects and collections. I specifially imported the _merge function from this library to merge my previous and new state objects in my Redux implementation.
 
 ###### [Dynamics](https://github.com/michaelvillar/dynamics.js/)
-Dynamics is a JavaScript library that creates physics-based animations. I found this especially useful when developing the custom popover modals. But since it is a generic animations library, I'm able to use it in any component to animate any type of element (CSS or JavaScript)... Sweet!
+Dynamics is a JavaScript library that creates physics-based animations. I found this especially useful when developing the custom popover modal. Since it's a generic animations library, I'm able to use it in any component to animate any type of element (CSS or JavaScript)... Sweet!
 
 ###### [Axios](https://github.com/mzabriskie/axios)
-Axios is a promise based HTTP client for the browser and node.js. This is how I'm able to make my api requests and return the data that I'm looking for. I implement this with the Github API to get information about my prototype 'artists' (i.e., random Github users)
+Axios is a promise-based HTTP client for the browser and node.js. This is how I'm able to make my api requests and return the data that I'm looking for. I implement this with the Github API to populate my 'artists' (i.e., random Github users) for the prototype
 
 ###### [Chance](https://github.com/chancejs/chancejs)
-Chance is a utility library to generate anything random for JavaScript. I use this to.... Yep, you guessed it generate random stuff, (e.g., names, integers)
+Chance is a utility library to generate anything random for JavaScript. I use this to.... Yep, you guessed it generate random stuff (e.g., names, integers)
 
 ###### [Normalize](https://github.com/necolas/normalize.css/)
 This is a small CSS file that provides a better way for default styling
@@ -109,7 +109,7 @@ Raven is a tiny standalone JavaScript client for [Sentry](https://getsentry.com/
 
 
 ## Good stuff to know
-* Robotbook is my creation using Chance.js to generate random data for my user fields, and using [Robohash](https://robohash.org/) to generate my robot avatars.
+* Robotbook is something I created using Chance.js to generate random data for my user fields, and using [Robohash](https://robohash.org/) to generate my robot avatars 
 
 * I borrowed [the original Stagelink stylesheet](https://stagelink.s3.amazonaws.com/assets/application-0b12a830028cd37c30cbb66064f9a4b3.css) in this rapid prototyping adventure
 
@@ -129,7 +129,7 @@ npm start
 * Integrate SASS and CSS Modules for a more modular way of organizing CSS
 * Convert to ES6 syntax
 * Move Redux async logic from reducers to middleware 
-* Develop User login functionality and authentication
+* Develop user-login functionality and authentication
 * Integrate Ruby on rails :)
 
 
