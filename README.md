@@ -1,5 +1,5 @@
 # Superfan: A prototype feature
-![alt text](https://s3.amazonaws.com/chamixes/Home.png "Superfan")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/Home.png "Superfan")
 
 ### What the heck is this?
 Simply put, it's an idea. After spending some time looking through [Stagelink.com](https://stagelink.com), I got inspired to develop a feature enhancement. 
@@ -7,7 +7,7 @@ Simply put, it's an idea. After spending some time looking through [Stagelink.co
 
 So back to the feature. After my brainstorm, I settled on one feature I thought would be cool--A way for fans to track their own fandom. And thus **Superfan** was born
 
-![alt text](https://s3.amazonaws.com/chamixes/SuperfanInfo.png "What's a Superfan?")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/SuperfanInfo.png "What's a Superfan?")
 
 
 
@@ -16,7 +16,7 @@ So back to the feature. After my brainstorm, I settled on one feature I thought 
 #### Fans can vote for an artist to come to their town
 > I recreated the voting functionality as seen on Stagelink.com
 
-![alt text](https://s3.amazonaws.com/chamixes/ArtistPage.png "Voting page")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/ArtistPage.png "Voting page")
 
 #### Every fan has a unique fan code
 >I just used a username for simplicity's sake
@@ -24,13 +24,13 @@ So back to the feature. After my brainstorm, I settled on one feature I thought 
 #### After their initial vote, they can share a *special link*  with their friends
 > Special link = artist's voting page + user's fan code set as a query parameter
 
-![alt text](https://s3.amazonaws.com/chamixes/Promote2.png "Promote")
-![alt text](https://s3.amazonaws.com/chamixes/Promote.png "The special link")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/Promote2.png "Promote")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/Promote.png "The special link")
 
 #### In my world, all fans start with 5 points in their Fan Power Pack
 > Each fan starts with a Total Fan Power score of **5**
 
-![alt text](https://s3.amazonaws.com/chamixes/UserProfile.png "User Profile")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/UserProfile.png "User Profile")
 
 #### When this special link is visited, their *fan power*  increases by 1 point
 > In a real implementaion of this, I'd suggest registering IP addresses to prevent malicious use of this. **One computer should be allowed to increase fan power one time per artist.** 
