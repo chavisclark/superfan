@@ -1,5 +1,5 @@
 # Superfan: A prototype feature
-![alt text](https://d3brgjqtir64ox.cloudfront.net/Home.png "Superfan")
+![alt text](https://d3brgjqtir64ox.cloudfront.net/HomePage.png "Superfan")
 
 ### What the heck is this?
 Simply put, it's an idea. After spending some time looking through [Stagelink.com](https://stagelink.com), I got inspired to develop a feature enhancement. 
