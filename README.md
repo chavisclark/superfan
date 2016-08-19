@@ -5,7 +5,7 @@
 Simply put, it's an idea. After spending some time looking through [Stagelink.com](https://stagelink.com), I got inspired to develop a feature enhancement. 
 > [Stagelink enables artists and managers to engage fans and efficiently promote shows.](https://www.facebook.com/Stagelink) Stagelink lets its users make "Come play in my town" type of requests for their favorite artists. Their request (i.e., vote) then accumulates based on location. This allows artists to effectively plan their tour dates and locations. 
 
-So back to the feature. After my brainstorm, I settled on one feature I thought would be cool--A way for fans to track their own fandom. And thus **Superfan** was born
+So back to the feature. After my brainstorm, I settled on one feature I thought would be cool--A way for fans to track their own fandom. And thus, **Superfan** was born...
 
 ![alt text](https://d3brgjqtir64ox.cloudfront.net/SuperfanInfo.png "What's a Superfan?")
 
