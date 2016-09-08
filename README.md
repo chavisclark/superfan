@@ -133,9 +133,5 @@ npm start
 * Integrate Ruby on rails :)
 
 
-## Note to Stagelink
-Dear Stagelink,
-
-I hope you don't mind my enthusiasm 🤓
-
-— [Chā](https://twitter.com/cha_skyes)
+##### Made with 💚 from my basement 
+— C.C.
