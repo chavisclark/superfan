@@ -5,8 +5,7 @@ var Navigation = require('./Navigation');
 var {AddToMyArtists, LogoutUser} = require('../actions/users');
 var githubHelpers = require('../utils/githubHelpers');
 var dynamics = require('dynamics.js');
-require('normalize.css');
-require('../styles/main.css');
+var styles = require('../styles/main.css');
 
 var Main = React.createClass({
   contextTypes: {
