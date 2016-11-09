@@ -43064,7 +43064,7 @@
 	      var ls = document.createElement('link');
 	      ls.rel = 'stylesheet';
 	      ls.id = 'pagepile';
-	      ls.href = '/node_modules/pagepiling.js/dist/jquery.pagepiling.css';
+	      ls.href = 'https://d3brgjqtir64ox.cloudfront.net/pagepiling.min.css';
 	      document.getElementsByTagName('head')[0].appendChild(ls);
 	    } else {
 	      document.getElementById("pagepile").disabled = false;
