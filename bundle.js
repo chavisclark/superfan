@@ -21470,7 +21470,8 @@
 	  React.createElement(IndexRoute, { component: Home }),
 	  React.createElement(Route, { path: '/profile', onEnter: requireAuth, component: UserProfileContainer }),
 	  React.createElement(Route, { path: '/artists', component: ArtistsContainer }),
-	  React.createElement(Route, { path: '/superfan', component: SuperfanContainer }),
+	  React.createElement(Route, { path: '/about-superfan', component: SuperfanContainer }),
+	  React.createElement(Route, { path: '/superfan/', component: Home }),
 	  React.createElement(Route, { path: '/:stagename', component: ArtistProfileContainer })
 	);
 
@@ -27178,7 +27179,7 @@
 	  handleGetSuperfan: function () {
 	    this.handleCloseMobile();
 	    this.context.router.push({
-	      pathname: '/superfan'
+	      pathname: '/about-superfan'
 	    });
 	  },
 

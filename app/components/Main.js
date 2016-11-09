@@ -42,7 +42,7 @@ var Main = React.createClass({
   handleGetSuperfan: function () {
       this.handleCloseMobile()
       this.context.router.push({
-        pathname: '/superfan'
+        pathname: '/about-superfan'
       })
   },
 
