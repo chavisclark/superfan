@@ -21471,7 +21471,7 @@
 	  React.createElement(Route, { path: '/profile', onEnter: requireAuth, component: UserProfileContainer }),
 	  React.createElement(Route, { path: '/artists', component: ArtistsContainer }),
 	  React.createElement(Route, { path: '/about-superfan', component: SuperfanContainer }),
-	  React.createElement(Route, { path: '/superfan/', component: Home }),
+	  React.createElement(Route, { path: '/superfan', component: Home }),
 	  React.createElement(Route, { path: '/:stagename', component: ArtistProfileContainer })
 	);
 
@@ -27158,7 +27158,7 @@
 
 	  handleLogout: function () {
 	    this.handleCloseMobile();
-	    location.href = '/superfan';
+	    location.href = '/superfan/';
 	    this.props.LogoutUser();
 	  },
 

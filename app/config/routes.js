@@ -26,7 +26,7 @@ var routes = (
       <Route path='/profile' onEnter={requireAuth} component={UserProfileContainer} />
       <Route path='/artists' component={ArtistsContainer} />
       <Route path='/about-superfan' component={SuperfanContainer} />
-      <Route path='/superfan/' component={Home} />
+      <Route path='/superfan' component={Home} />
       <Route path='/:stagename' component={ArtistProfileContainer} />
     </Route>
 

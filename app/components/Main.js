@@ -21,7 +21,7 @@ var Main = React.createClass({
 
   handleLogout: function () {
       this.handleCloseMobile()
-      location.href = '/superfan'; 
+      location.href = '/superfan/'; 
       this.props.LogoutUser()
   },
 
