@@ -29890,6 +29890,7 @@
 
 	var React = __webpack_require__(1);
 	var LoggedInMobile = __webpack_require__(277);
+	var logo = __webpack_require__(275);
 
 	function NavbarMobile(props) {
 	  var { GoHome,
@@ -29908,7 +29909,7 @@
 	    React.createElement(
 	      'a',
 	      { className: 'nav-main__logo', href: '#', onClick: GoHome },
-	      React.createElement('img', { alt: 'Stagelink - Your fan-powered tour promoter', height: '38', src: 'https://stagelink.s3.amazonaws.com/assets/logo-365305867ab32d75cd2b854048c7be89.png', width: '158' })
+	      React.createElement('img', { alt: 'Stagelink - Your fan-powered tour promoter', height: '38', src: logo, width: '158' })
 	    ),
 	    React.createElement('input', { id: 'menu', type: 'checkbox', name: 'menu', className: 'HiddenCheckbox' }),
 	    React.createElement('label', { htmlFor: 'menu', className: 'mobileMenuIcon' }),

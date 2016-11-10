@@ -1,5 +1,6 @@
 var React = require('react');
 var LoggedInMobile = require('./LoggedInMobile');
+var logo = require('../../img/logo.png');
 
 function NavbarMobile(props) {
   var { GoHome, 
@@ -15,7 +16,7 @@ function NavbarMobile(props) {
   return (
     <div className="mobileMenuContainer visible-sm visible-xs">
       <a className="nav-main__logo" href="#" onClick={GoHome}>
-        <img alt="Stagelink - Your fan-powered tour promoter" height="38" src="https://stagelink.s3.amazonaws.com/assets/logo-365305867ab32d75cd2b854048c7be89.png" width="158" />
+        <img alt="Stagelink - Your fan-powered tour promoter" height="38" src={logo} width="158" />
       </a>
       <input id="menu" type="checkbox" name="menu" className="HiddenCheckbox"/>
       <label htmlFor="menu" className="mobileMenuIcon"></label>
