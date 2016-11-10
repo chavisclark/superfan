@@ -16,7 +16,7 @@ function Navbar(props) {
   return (
     <div className='hidden-sm hidden-xs'>
       <a className="nav-main__logo" href="#" onClick={GoHome}>
-        <img alt="Stagelink - Your fan-powered tour promoter" height="38" src={logo} width="158" />
+        <img alt="Superfan" height="38" src={logo} width="158" />
       </a>
        {!user ? ''
         :

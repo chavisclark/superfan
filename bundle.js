@@ -29768,7 +29768,7 @@
 	    React.createElement(
 	      'a',
 	      { className: 'nav-main__logo', href: '#', onClick: GoHome },
-	      React.createElement('img', { alt: 'Stagelink - Your fan-powered tour promoter', height: '38', src: logo, width: '158' })
+	      React.createElement('img', { alt: 'Superfan', height: '38', src: logo, width: '158' })
 	    ),
 	    !user ? '' : React.createElement(LoggedIn, { GetProfile: GetProfile,
 	      logout: logout,
@@ -29909,7 +29909,7 @@
 	    React.createElement(
 	      'a',
 	      { className: 'nav-main__logo', href: '#', onClick: GoHome },
-	      React.createElement('img', { alt: 'Stagelink - Your fan-powered tour promoter', height: '38', src: logo, width: '158' })
+	      React.createElement('img', { alt: 'Superfan', height: '38', src: logo, width: '158' })
 	    ),
 	    React.createElement('input', { id: 'menu', type: 'checkbox', name: 'menu', className: 'HiddenCheckbox' }),
 	    React.createElement('label', { htmlFor: 'menu', className: 'mobileMenuIcon' }),
@@ -29919,7 +29919,7 @@
 	      React.createElement(
 	        'a',
 	        { className: 'nav-main__logo', href: '#', onClick: GoHome },
-	        React.createElement('img', { className: 'img-responsive mobilize pull-right', alt: 'Stagelink - Your fan-powered tour promoter', height: '38', src: 'https://stagelink.s3.amazonaws.com/assets/logo-365305867ab32d75cd2b854048c7be89.png', width: '158' })
+	        React.createElement('img', { className: 'img-responsive mobilize pull-right', alt: 'Superfan', height: '38', src: logo, width: '158' })
 	      )
 	    ),
 	    React.createElement(
@@ -29954,7 +29954,7 @@
 	          { className: 'mobileMenu-item' },
 	          React.createElement(
 	            'a',
-	            { href: 'https://github.com/chavisclark/superfan/README.md', target: '_blank', className: 'mobileMenu-link' },
+	            { href: 'https://github.com/chavisclark/superfan/blob/master/README.md', target: '_blank', className: 'mobileMenu-link' },
 	            'READ ME'
 	          )
 	        ),
