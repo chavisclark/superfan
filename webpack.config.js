@@ -55,7 +55,7 @@ module.exports = {
         new ExtractTextPlugin("styles.css"),
         new BrowserSyncPlugin({
             host: 'localhost',
-            port: 3000,
+            port: 7777,
             proxy: 'http://localhost:8080/'
         }),
     ],

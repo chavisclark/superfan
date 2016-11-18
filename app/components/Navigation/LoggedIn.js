@@ -21,7 +21,7 @@ function LoggedIn(props) {
           <a data-toggle='dropdown' href='#' id='loginbox__dropdown-toggle'>
             <i className='fa fa-sort-down'></i>
           </a>
-          <ul aria-labelled-by='loginbox__dropdown-toggle' className='dropdown-menu' role='menu'>
+          <ul className='dropdown-menu' role='menu'>
             <li><a href="#" onClick={GetArtists}>🎹&nbsp;&nbsp;Browse artists</a></li>
             <li><a className="connect-artist" href="#" onClick={GetSuperfan}>🤔&nbsp;&nbsp;Superfan? </a></li>
             <li className='divider'></li>

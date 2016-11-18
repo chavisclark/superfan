@@ -51,6 +51,7 @@ var VoteContainer = React.createClass({
     geocodeAddress: function (address) {
       this.geocoder.geocode({ 'address': address }, function handleResults(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
+          console.log(results[0]);
           this.setState({
             foundAddress: results[0].formatted_address,
             isGeocodingError: false
