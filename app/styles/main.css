@@ -38,7 +38,7 @@ html, body {
 /* Using this as home bg image only
 ------------------------------------------------------*/
 #app.orangeBg {
-  background: url('https://hd.unsplash.com/photo-1429962714451-bb934ecdc4ec');
+  background: url('../img/bg.jpg');
   background-size: cover;
   height: 100vh;
   opacity: 
