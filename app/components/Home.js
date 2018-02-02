@@ -119,7 +119,6 @@ var Home = React.createClass({
     }
     return (
       <div className="jumbotron col-sm-12 white-text" style={styles.transparentBg}>
-          <div className='space-top'>&nbsp;</div>
           <MainWrapper center={true} unsplash={true}>
             {!user.loggedUser ?
               <NotLoggedIn

@@ -43729,11 +43729,6 @@
 	      'div',
 	      { className: 'jumbotron col-sm-12 white-text', style: styles.transparentBg },
 	      React.createElement(
-	        'div',
-	        { className: 'space-top' },
-	        '\xA0'
-	      ),
-	      React.createElement(
 	        MainWrapper,
 	        { center: true, unsplash: true },
 	        !user.loggedUser ? React.createElement(NotLoggedIn, {
@@ -44131,7 +44126,7 @@
 	    'span',
 	    { className: 'center-layout boxCover', style: styles.container },
 	    React.createElement(
-	      'h1',
+	      'h2',
 	      { className: 'orange-text shadow mobilize-text' },
 	      'Hey ',
 	      name,

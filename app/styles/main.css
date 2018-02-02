@@ -33,6 +33,10 @@ html, body {
     -ms-transition:0.3s ease all;
      -o-transition:0.3s ease all;
         transition:0.3s ease all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Using this as home bg image only
@@ -41,7 +45,7 @@ html, body {
   background: url('../img/bg.jpg');
   background-size: cover;
   height: 100vh;
-  opacity: 
+  opacity: 1;
 }
 
 /* Overwriting Stagelink.css  
@@ -55,6 +59,12 @@ a.loginbox__username {
   opacity: .5;
   -webkit-transition: ease-out 0.4s !important;
   transition: ease-out 0.4s !important;
+}
+
+/* Navigation
+-----------------------------------*/
+nav[role="main"] {
+  left: 0;
 }
 /* Layout
 ------------------------------------------------------*/
@@ -511,7 +521,9 @@ option:focus {
 .section{
   text-align: center;
 }
-
+.pp-section {
+  left: 0;
+}
 .intro{
   width:95%;
   margin:auto;
@@ -662,9 +674,6 @@ option:focus {
   .hvr-hang {
     font-size: 2em;
   }
-  .scroll-box {
-    padding-top: 60px;
-  }
   .scroll-box-text {
     font-size: .5em;
   }
@@ -682,9 +691,6 @@ option:focus {
   }
   .hvr-hang {
     font-size: 2em;
-  }
-  .scroll-box {
-    padding-top: 100px;
   }
   .scroll-box-text {
     font-size: .5em;
@@ -704,9 +710,6 @@ option:focus {
   .hvr-hang {
     font-size: 2em;
   }
-  .scroll-box {
-    padding-top: 100px;
-  }
   .scroll-box-text {
     font-size: .5em;
   }
@@ -724,9 +727,6 @@ option:focus {
   }
   .hvr-hang {
     font-size: 2em;
-  }
-  .scroll-box {
-    padding-top: 100px;
   }
   .scroll-box-text {
     font-size: .5em;
@@ -746,9 +746,6 @@ option:focus {
   .hvr-hang {
     font-size: 2.5em;
   }
-  .scroll-box {
-    padding-top: 100px;
-  }
   .scroll-box-text {
     font-size: .5em;
   }
@@ -767,9 +764,6 @@ option:focus {
   .hvr-hang {
     font-size: 2.5em;
   }
-  .scroll-box {
-    padding-top: 100px;
-  }
   .scroll-box-text {
     font-size: .5em;
   }
@@ -787,9 +781,6 @@ option:focus {
   }
   .hvr-hang {
     font-size: 2.5em;
-  }
-  .scroll-box {
-    padding-top: 100px;
   }
   .scroll-box-text {
     font-size: .5em;
@@ -810,9 +801,6 @@ option:focus {
   .hvr-hang {
     font-size: 2.8em;
   }
-  .scroll-box {
-    padding-top: 100px;
-  }
   .scroll-box-text {
     font-size: .8em;
   }
@@ -823,16 +811,13 @@ option:focus {
     font-size: 4.108em;
   }
   h2 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   p {
     font-size: 2.2208em;
   }
   .hvr-hang {
     font-size: 2.8em;
-  }
-  .scroll-box {
-    padding-top: 100px;
   }
   .scroll-box-text {
     font-size: .8em;
@@ -844,16 +829,13 @@ option:focus {
     font-size: 4.552em;
   }
   h2 {
-    font-size: 4.0em;
+    font-size: 3.1em;
   }
   p {
     font-size: 2.576em;
   }
   .hvr-hang {
     font-size: 3em;
-  }
-  .scroll-box {
-    padding-top: 100px;
   }
   .scroll-box-text {
     font-size: 1em;
@@ -872,9 +854,6 @@ option:focus {
   }
   .hvr-hang {
     font-size: 3em;
-  }
-  .scroll-box {
-    padding-top: 100px;
   }
   .scroll-box-text {
     font-size: 1em;

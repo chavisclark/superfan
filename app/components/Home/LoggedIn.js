@@ -16,7 +16,7 @@ var { name,
 
   return (
     <span className='center-layout boxCover' style={styles.container}>
-      <h1 className='orange-text shadow mobilize-text'>Hey {name}!</h1>
+      <h2 className='orange-text shadow mobilize-text'>Hey {name}!</h2>
       <div className='col-sm-12 col-xs-12'>
       {artists < 0 ?
         <Link to='/artists'>
